@@ -1,13 +1,13 @@
 body { text-align: center;
-    background-image: url("1761.png"); /* The image used */
-    background-color: black; /* Used if the image is unavailable */
+    background-image:  url("IMG/1761.png"); /* The image used */
+    background-color: #82ba28eb; 
+    background-blend-mode: multiply;
     height: 500px; /* You must set a specified height */
-    background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 .searchBtn {
-    background-color: #45c015;
+    background-color: hsl(108, 7%, 15%);
     margin: 10px;
     border-width: 2px;
 }
