@@ -35,6 +35,7 @@ echo $pokeID;
               <label for="pokeName" id="searchLabel">Enter the Pokemon name or ID </label>
               <input type="text" name="pokeName" id="pokeName">
               <br>
+<<<<<<< HEAD
 
               
         <input type="submit" value ="PokedexId" name = "Pokemon">
@@ -42,6 +43,15 @@ echo $pokeID;
           </form>
 </div>
   </div>
+=======
+        <input type="submit" value ="PokemonId" name = "Pokemon">
+          </div>
+          </form>
+      </div>
+  </div>
+ 
+  <script src="index.js"></script>
+>>>>>>> e164e625c9e36eb1d4b3cebc86a72af43f5a6b8e
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
@@ -52,6 +62,17 @@ echo $pokeID;
  
 
 
+<<<<<<< HEAD
+=======
+<?php
+if (isset($_POST['Pokemon'])){
+    $input = $_POST ['pokeName'];
+    $input = strtolower($input);
+}
+  
+?>
+
+>>>>>>> e164e625c9e36eb1d4b3cebc86a72af43f5a6b8e
 
 
         <!-- fetchPokemons (pokemon) {
