@@ -1,0 +1,45 @@
+body { text-align: center;
+    background-image: url("1761.png"); /* The image used */
+    background-color: black; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.searchBtn {
+    background-color: #45c015;
+    margin: 10px;
+    border-width: 2px;
+}
+.container {
+    margin: auto;
+}
+
+.poke-container {
+    margin: auto;
+    width: 90px;
+    padding: 10px;
+}
+
+.header-container {
+    border-radius: 0px !important;
+}
+
+.header-text{
+    margin: 0 auto;
+}
+.generate-pokemon {
+    margin: 0 auto;
+}
+
+.searchBtn {
+    background-color: #5fb618;
+    margin: 10px;
+    border-width: 2px;
+}
+.pics { 
+    position: absolute;
+    right: 100px;
+    bottom: 120px;
+
+}
