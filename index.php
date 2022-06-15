@@ -15,16 +15,19 @@
              
           </div>
       </div>
+      
       <div class="row align-items-center" id="searchInputRow">
+        <form method ="post">
           <div class="col-12 col-md-4 offset-md-4 text-center" id="searchInputCol">
               <label for="pokeName" id="searchLabel">Enter the Pokemon name or ID </label>
               <input type="text" name="pokeName" id="pokeName">
               <br>
-              <button type="button" class="btn" id="searchBtn">Search</button>
+        <input type="submit" value ="PokemonId" name = "Pokemon">
           </div>
+          </form>
       </div>
   </div>
-  
+ 
   <script src="index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -34,18 +37,17 @@
  
 
 
-(()=>{
-
-    let detailRowCreation = false;
-    document.getElementById('searchBtn').addEventListener('click' , ()=>{
-        let pokemon = document.getElementById('pokeName').value ;
-        pokemon = pokemon.toLowerCase();
-        fetchPokemons(pokemon);
-    })
-
+<?php
+if (isset($_POST['Pokemon'])){
+    $input = $_POST ['pokeName'];
+    $input = strtolower($input);
+}
   
+?>
 
-    async function fetchPokemons (pokemon) {
+
+
+        <!-- fetchPokemons (pokemon) {
         let data1 = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
         let foundPokemon = await data1.json();
         let evoUrl = await getEvoUrl(foundPokemon);
@@ -103,7 +105,7 @@
         let response = await data.json();
         return response;
     }
-    /*______________Other Functions______________*/
+ 
     const pushImageAndName = (jsonobj , arr) => {
         let newObj = {'name' :  jsonobj.name , 'url': jsonobj.sprites.other.home.front_default};
       
@@ -212,6 +214,6 @@
         }
         return ul;
     }
-})();
+})(); -->
 
 
