@@ -23,4 +23,3 @@
 Today we are going to re-create the pokedexo  challenge we did in  `JS 
 
 
-![ Image ](main-wbp)
